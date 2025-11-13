@@ -1,12 +1,17 @@
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "@/hooks/useTranslations";
+import { useLanguage } from "@/context/LanguageContext";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("EN");
+  const { language, changeLanguage } = useLanguage();
+  const t = useTranslations();
 
-  const languages = ["EN", "中文", "ID"];
+  const toggleLanguage = () => {
+    changeLanguage(language === 'en' ? 'zh' : 'en');
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
@@ -20,40 +25,28 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#home" className="text-sm text-foreground hover:text-primary transition-colors">
-              首页
+              {t.home}
             </a>
             <a href="#features" className="text-sm text-foreground hover:text-primary transition-colors">
-              社区
+              {t.community}
             </a>
             <a href="#discover" className="text-sm text-foreground hover:text-primary transition-colors">
-              发现
+              {t.discover}
             </a>
             
-            {/* Language Selector 
-            <div className="relative group">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="flex items-center space-x-1 text-sm"
-              >
-                <Globe className="w-4 h-4" />
-                <span>{language}</span>
-              </Button>
-              <div className="absolute right-0 mt-2 w-24 bg-card border border-border rounded-2xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                {languages.map((lang) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(lang)}
-                    className="block w-full px-4 py-2 text-sm text-left hover:bg-muted transition-colors first:rounded-t-2xl last:rounded-b-2xl"
-                  >
-                    {lang}
-                  </button>
-                ))}
-              </div>
-            </div>*/}
+            {/* Language Toggle */}
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={toggleLanguage}
+              className="flex items-center space-x-1 text-sm"
+            >
+              <Globe className="w-4 h-4" />
+              <span>{language === 'en' ? '中文' : 'EN'}</span>
+            </Button>
 
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
-              提交项目 →
+              {t.submitProject}
             </Button>
           </div>
 
@@ -74,40 +67,36 @@ const Navbar = () => {
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              首页
+              {t.home}
             </a>
             <a
               href="#features"
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              社区
+              {t.community}
             </a>
             <a
               href="#discover"
               className="block text-foreground hover:text-primary transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              发现
+              {t.discover}
             </a>
-            <div className="flex items-center space-x-2">
-              {languages.map((lang) => (
-                <button
-                  key={lang}
-                  onClick={() => setLanguage(lang)}
-                  className={`px-3 py-1 rounded-full text-sm ${
-                    language === lang
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground"
-                  }`}
-                >
-                  {lang}
-                </button>
-              ))}
+            <div className="flex items-center justify-between">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={toggleLanguage}
+                className="flex items-center space-x-1"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{language === 'en' ? '中文' : 'EN'}</span>
+              </Button>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
+                {t.submitProject}
+              </Button>
             </div>
-            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
-              提交项目 →
-            </Button>
           </div>
         )}
       </div>

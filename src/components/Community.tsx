@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Twitter } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Community = () => {
+  const t = useTranslations();
+
   return (
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Background decoration */}
@@ -15,10 +18,10 @@ const Community = () => {
           {/* Header */}
           <div className="space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">
-              🎉 Join the <span className="text-gradient">Meme Revolution</span>
+              {t.joinRevolution}
             </h2>
             <p className="text-xl text-muted-foreground">
-              Connect with thousands of degen traders and meme coin enthusiasts!
+              {t.communitySubtext}
             </p>
           </div>
 
@@ -30,19 +33,19 @@ const Community = () => {
                 <div className="w-16 h-16 mx-auto bg-gradient-to-br from-bsc-yellow to-bsc-yellow-bright rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
                   <MessageCircle className="w-8 h-8 text-bsc-dark" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">Telegram Community</h3>
+                <h3 className="text-2xl font-bold text-foreground">{t.telegramCommunity}</h3>
                 <p className="text-muted-foreground">
-                  Get real-time alerts, discuss hot tokens, and connect with fellow degens
+                  {t.telegramDesc}
                 </p>
                 <div className="flex items-center justify-center space-x-2 text-primary font-semibold">
                   <div className="w-2 h-2 bg-mint-green rounded-full animate-pulse"></div>
-                  <span>12,847 members online</span>
+                  <span>{t.telegramMembers}</span>
                 </div>
                 <Button
                   size="lg"
                   className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Join Telegram
+                  {t.telegramCommunity}
                 </Button>
               </div>
             </div>
@@ -53,20 +56,20 @@ const Community = () => {
                 <div className="w-16 h-16 mx-auto bg-gradient-to-br from-mint-green to-mint-green-light rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
                   <Twitter className="w-8 h-8 text-bsc-dark" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">Follow on X / Twitter</h3>
+                <h3 className="text-2xl font-bold text-foreground">{t.twitterFollow}</h3>
                 <p className="text-muted-foreground">
-                  Stay updated with trending coins, market news, and spicy memes
+                  {t.twitterDesc}
                 </p>
                 <div className="flex items-center justify-center space-x-2 text-mint-green font-semibold">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                  <span>25.4K followers</span>
+                  <span>{t.twitterFollowers}</span>
                 </div>
                 <Button
                   size="lg"
                   variant="outline"
                   className="w-full border-mint-green text-mint-green hover:bg-mint-green hover:text-bsc-dark"
                 >
-                  Follow on X
+                  {t.twitter}
                 </Button>
               </div>
             </div>
@@ -75,13 +78,13 @@ const Community = () => {
           {/* Bottom CTA */}
           <div className="pt-8">
             <p className="text-lg text-muted-foreground mb-4">
-              Want your token featured? Submit it now! 🚀
+              {t.submitNow} 🚀
             </p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-bsc-yellow to-mint-green text-bsc-dark hover:opacity-90 font-bold"
             >
-              Submit Your Meme Coin
+              {t.submitNow}
             </Button>
           </div>
         </div>

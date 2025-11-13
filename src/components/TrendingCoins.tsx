@@ -1,6 +1,7 @@
 import { TrendingUp, TrendingDown, ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const mockCoins = [
   {
@@ -66,16 +67,18 @@ const mockCoins = [
 ];
 
 const TrendingCoins = () => {
+  const t = useTranslations();
+
   return (
     <section id="trending" className="py-20 bg-bsc-darker">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 space-y-4 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold">
-            🔥 <span className="text-gradient">Top Trending</span> Coins
+            {t.trendingTitle}
           </h2>
           <p className="text-xl text-muted-foreground">
-            The hottest meme coins that degens are aping into right now!
+            {t.trendingSubtext}
           </p>
         </div>
 
@@ -158,7 +161,7 @@ const TrendingCoins = () => {
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           >
-            View All Coins
+            {t.viewAllCoins}
           </Button>
         </div>
       </div>

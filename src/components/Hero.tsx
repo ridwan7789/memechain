@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Rocket, Coins } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Hero = () => {
+  const t = useTranslations();
+
   return (
     <section
       id="home"
@@ -17,16 +20,16 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in-up">
             {/* Main Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground">
-              MEME SMARTCHAIN
+              {t.heroTitle1}
               <br />
               <span className="text-4xl md:text-5xl lg:text-6xl">
-                构建专属MEME社区
+                {t.heroTitle2}
               </span>
             </h1>
 
             {/* Subheading */}
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
-              向社区展示的MEME社区。以网络空间站的形式，设站鸣，告诉全人类，你的链接 &gt; 社区和MEME项目的专属空间。
+              {t.heroSubtitle}
             </p>
 
             {/* CTA Buttons */}
@@ -36,7 +39,7 @@ const Hero = () => {
                 className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 py-6 rounded-full glow-orange group shadow-lg"
               >
                 <Rocket className="w-5 h-5 mr-2 group-hover:translate-x-1 transition-transform" />
-                创建项目 →
+                {t.createProject}
               </Button>
               <Button
                 size="lg"
@@ -44,7 +47,7 @@ const Hero = () => {
                 className="border-2 border-primary text-primary hover:bg-primary/10 text-base px-8 py-6 rounded-full"
               >
                 <Coins className="w-5 h-5 mr-2" />
-                探索广场
+                {t.exploreSquare}
               </Button>
             </div>
           </div>

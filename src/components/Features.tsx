@@ -1,41 +1,41 @@
 import { Zap, Shield, Heart } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
-const features = [
-  {
-    icon: Zap,
-    title: "Real-time Meme Data",
-    description:
-      "Get instant updates on price movements, volume spikes, and trending tokens. Never miss a pump!",
-    gradient: "from-bsc-yellow to-bsc-yellow-bright",
-  },
-  {
-    icon: Shield,
-    title: "Verified Listings",
-    description:
-      "All tokens are thoroughly reviewed. We filter out rugs and scams so you can ape safely.",
-    gradient: "from-mint-green to-mint-green-light",
-  },
-  {
-    icon: Heart,
-    title: "Fun + Fair + Fast",
-    description:
-      "Community-driven platform built by degens, for degens. No BS, just pure meme coin magic!",
-    gradient: "from-bsc-yellow via-mint-green to-bsc-yellow",
-  },
-];
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Features = () => {
+  const t = useTranslations();
+
+  const features = [
+    {
+      icon: Zap,
+      title: t.feature1Title,
+      description: t.feature1Desc,
+      gradient: "from-bsc-yellow to-bsc-yellow-bright",
+    },
+    {
+      icon: Shield,
+      title: t.feature2Title,
+      description: t.feature2Desc,
+      gradient: "from-mint-green to-mint-green-light",
+    },
+    {
+      icon: Heart,
+      title: t.feature3Title,
+      description: t.feature3Desc,
+      gradient: "from-bsc-yellow via-mint-green to-bsc-yellow",
+    },
+  ];
+
   return (
     <section id="about" className="py-20 bg-bsc-darker">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4 animate-fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Why <span className="text-gradient">Meme SmartChain</span>?
+            {t.whyTitle} <span className="text-gradient">Meme SmartChain</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            The ultimate platform for discovering and tracking BSC meme coins
+            {t.whySubtitle}
           </p>
         </div>
 
@@ -82,19 +82,19 @@ const Features = () => {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center space-y-2">
             <div className="text-3xl font-bold text-primary">99.9%</div>
-            <div className="text-sm text-muted-foreground">Uptime</div>
+            <div className="text-sm text-muted-foreground">{t.uptime}</div>
           </div>
           <div className="text-center space-y-2">
             <div className="text-3xl font-bold text-mint-green">50K+</div>
-            <div className="text-sm text-muted-foreground">Active Users</div>
+            <div className="text-sm text-muted-foreground">{t.activeUsers}</div>
           </div>
           <div className="text-center space-y-2">
             <div className="text-3xl font-bold text-primary">1,234</div>
-            <div className="text-sm text-muted-foreground">Tokens Listed</div>
+            <div className="text-sm text-muted-foreground">{t.tokensListed}</div>
           </div>
           <div className="text-center space-y-2">
             <div className="text-3xl font-bold text-mint-green">24/7</div>
-            <div className="text-sm text-muted-foreground">Support</div>
+            <div className="text-sm text-muted-foreground">{t.support}</div>
           </div>
         </div>
       </div>

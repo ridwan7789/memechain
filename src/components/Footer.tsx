@@ -1,7 +1,9 @@
 import { Twitter, MessageCircle, Github, Heart } from "lucide-react";
+import { useTranslations } from "@/hooks/useTranslations";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations();
 
   return (
     <footer className="bg-card border-t border-border py-12">
@@ -9,34 +11,34 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <span className="text-2xl font-bold text-foreground">MEMESMARTCHAIN</span>
+            <span className="text-2xl font-bold text-foreground">{t.footerBrand}</span>
             <p className="text-sm text-muted-foreground">
-              构建专属MEME社区 — 由社区驱动，为社区服务。
+              {t.footerBrandDesc}
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">快速链接</h4>
+            <h4 className="font-semibold text-foreground">{t.quickLinks}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#home" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  首页
+                  {t.home}
                 </a>
               </li>
               <li>
                 <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  平台功能
+                  {t.platformFeaturesTitle}
                 </a>
               </li>
               <li>
                 <a href="#discover" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  发现代币
+                  {t.discover}
                 </a>
               </li>
               <li>
                 <a href="#submit" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  提交项目
+                  {t.submitProject}
                 </a>
               </li>
             </ul>
@@ -44,26 +46,26 @@ const Footer = () => {
 
           {/* Resources */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">资源</h4>
+            <h4 className="font-semibold text-foreground">{t.resources}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  文档
+                  {t.documentation}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  API 接口
+                  {t.api}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  品牌资料
+                  {t.brandAssets}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  服务条款
+                  {t.termsOfService}
                 </a>
               </li>
             </ul>
@@ -71,7 +73,7 @@ const Footer = () => {
 
           {/* Social */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-foreground">加入社区</h4>
+            <h4 className="font-semibold text-foreground">{t.joinCommunity}</h4>
             <div className="flex space-x-4">
               <a
                 href="https://x.com/MemeSmartChain"
@@ -93,7 +95,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-xs text-muted-foreground">
-              关注我们获取更新、迷因和社区动态！
+              {t.socialText}
             </p>
           </div>
         </div>
@@ -102,18 +104,18 @@ const Footer = () => {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground flex items-center">
-              © {currentYear} MEMESMARTCHAIN — 由社区驱动{" "}
+              © {currentYear} {t.footerBrand} — {t.privacyPolicy}{" "}
               <Heart className="w-4 h-4 mx-1 text-primary fill-primary" />
             </p>
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               <a href="#" className="hover:text-primary transition-colors">
-                隐私政策
+                {t.privacyPolicy}
               </a>
               <a href="#" className="hover:text-primary transition-colors">
-                Cookie 政策
+                {t.cookiePolicy}
               </a>
               <a href="#" className="hover:text-primary transition-colors">
-                联系我们
+                {t.contactUs}
               </a>
             </div>
           </div>
