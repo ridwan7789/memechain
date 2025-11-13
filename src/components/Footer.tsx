@@ -74,13 +74,13 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">加入社区</h4>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/MemeSmartChain"
                 className="w-10 h-10 bg-muted/50 border border-border rounded-2xl flex items-center justify-center hover:bg-primary hover:border-primary transition-colors group"
               >
                 <Twitter className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
               </a>
               <a
-                href="#"
+                href="https://t.me/MemeSmartChain"
                 className="w-10 h-10 bg-muted/50 border border-border rounded-2xl flex items-center justify-center hover:bg-primary hover:border-primary transition-colors group"
               >
                 <MessageCircle className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
