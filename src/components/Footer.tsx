@@ -5,6 +5,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const t = useTranslations();
 
+  const handleContractClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    const contractAddress = "7pPHHsS8zXH2M33TqvxvN3QnXPpJe2wX74GHDstCpump";
+    navigator.clipboard.writeText(contractAddress);
+    alert(`Contract Address copied to clipboard: ${contractAddress}`);
+  };
+
   return (
     <footer className="bg-card border-t border-border py-12">
       <div className="container mx-auto px-4">
@@ -62,6 +69,14 @@ const Footer = () => {
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   {t.brandAssets}
                 </a>
+              </li>
+              <li>
+                <button
+                  onClick={handleContractClick}
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors text-left w-full"
+                >
+                  {t.contractAddress}
+                </button>
               </li>
               <li>
                 <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
