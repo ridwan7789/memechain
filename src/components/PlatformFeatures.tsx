@@ -1,6 +1,6 @@
 import { Users, LayoutDashboard, TrendingUp } from "lucide-react";
 import dashboardMockup1 from "@/assets/me2.jpeg";
-import dashboardMockup2 from "@/assets/dashboard-mockup-2.png";
+import dashboardMockup2 from "@/assets/c3.jpeg";
 import dashboardMockup3 from "@/assets/me.jpeg";
 import { useTranslations } from "@/hooks/useTranslations";
 
