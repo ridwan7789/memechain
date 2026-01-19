@@ -1,7 +1,7 @@
 import { Users, LayoutDashboard, TrendingUp } from "lucide-react";
-import dashboardMockup1 from "@/assets/dashboard-mockup-1.png";
+import dashboardMockup1 from "@/assets/me2.jpeg";
 import dashboardMockup2 from "@/assets/dashboard-mockup-2.png";
-import dashboardMockup3 from "@/assets/dashboard-mockup-3.png";
+import dashboardMockup3 from "@/assets/me.jpeg";
 import { useTranslations } from "@/hooks/useTranslations";
 
 const PlatformFeatures = () => {
@@ -102,11 +102,11 @@ const PlatformFeatures = () => {
 
                 {/* Decorative elements */}
                 <div
-                  className="absolute -z-10 top-8 -right-8 w-32 h-32 bg-bsc-orange/20 rounded-full blur-3xl"
+                  className="absolute -z-10 top-8 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-3xl"
                   style={{ animationDelay: `${index * 0.3}s` }}
                 ></div>
                 <div
-                  className="absolute -z-10 -bottom-8 -left-8 w-40 h-40 bg-bsc-yellow/20 rounded-full blur-3xl"
+                  className="absolute -z-10 -bottom-8 -left-8 w-40 h-40 bg-primary/20 rounded-full blur-3xl"
                   style={{ animationDelay: `${index * 0.3 + 0.2}s` }}
                 ></div>
               </div>

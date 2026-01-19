@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Rocket, Coins } from "lucide-react";
-import heroIllustration from "@/assets/hero-illustration.png";
+import heroIllustration from "@/assets/me3.jpeg";
 import { useTranslations } from "@/hooks/useTranslations";
 
 const Hero = () => {
@@ -57,16 +57,16 @@ const Hero = () => {
             <div className="relative rounded-3xl overflow-hidden card-shadow">
               <img
                 src={heroIllustration}
-                alt="Meme characters celebrating on BSC"
+                alt="Meme characters celebrating on Solana"
                 className="w-full h-auto animate-float"
               />
             </div>
-            
+
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-bsc-yellow rounded-full flex items-center justify-center text-3xl animate-bounce-slow shadow-lg">
+            <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary rounded-full flex items-center justify-center text-3xl animate-bounce-slow shadow-lg">
               🚀
             </div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-bsc-orange rounded-full flex items-center justify-center text-2xl animate-bounce-slow shadow-lg" style={{ animationDelay: "0.5s" }}>
+            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary rounded-full flex items-center justify-center text-2xl animate-bounce-slow shadow-lg" style={{ animationDelay: "0.5s" }}>
               💰
             </div>
           </div>

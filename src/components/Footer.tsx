@@ -76,19 +76,19 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground">{t.joinCommunity}</h4>
             <div className="flex space-x-4">
               <a
-                href="https://x.com/MemeSmartChain"
+                href="https://x.com/Meme_smartchain"
                 className="w-10 h-10 bg-muted/50 border border-border rounded-2xl flex items-center justify-center hover:bg-primary hover:border-primary transition-colors group"
               >
                 <Twitter className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
               </a>
               <a
-                href="https://t.me/MemeSmartChain"
+                href="https://t.me/Meme_SmartChain"
                 className="w-10 h-10 bg-muted/50 border border-border rounded-2xl flex items-center justify-center hover:bg-primary hover:border-primary transition-colors group"
               >
                 <MessageCircle className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />
               </a>
               <a
-                href="#"
+                href="https://docs.memesmartchain.xyz"
                 className="w-10 h-10 bg-muted/50 border border-border rounded-2xl flex items-center justify-center hover:bg-primary hover:border-primary transition-colors group"
               >
                 <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary-foreground" />

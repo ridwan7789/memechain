@@ -7,18 +7,18 @@ const translations = {
     community: 'Community',
     discover: 'Discover',
     submitProject: 'Submit Project →',
-    
+
     // Hero
     heroTitle1: 'MEME SMARTCHAIN',
     heroTitle2: 'Build Your Exclusive MEME Community',
     heroSubtitle: 'Showcase your MEME to the community. In the form of a web space station, set up your station to tell all humanity about your links > the exclusive space for community and MEME projects.',
     createProject: 'Create Project →',
     exploreSquare: 'Explore Square',
-    
+
     // Platform Features
     platformFeaturesTitle: 'Platform Core Features',
-    platformFeaturesSubtitle: "Creating a simple and unique BSC main chain community with strong functionality. Giving community ecology and capital MEME can communicate easily and simply, allowing fans to get the brand community. Our practical features can help you brand your community, interact with token fans, and improve BSC tokens.",
-    buildBscTitle: 'Build BSC Token Community',
+    platformFeaturesSubtitle: "Creating a simple and unique Solana main chain community with strong functionality. Giving community ecology and capital MEME can communicate easily and simply, allowing fans to get the brand community. Our practical features can help you brand your community, interact with token fans, and improve Solana tokens.",
+    buildBscTitle: 'Build Solana Token Community',
     buildBscDesc: 'Build a token space in the community. High-end community in Beijing, let it become your own space now, let fans experience the exclusive token space.',
     buildBscBullets: [
       'Write to the community exclusive space, post polls for discussion',
@@ -32,15 +32,15 @@ const translations = {
       'Multiple types of voting: text, image, video, multiple option settings for the community',
       'Long voting issuance to one-click interaction, easy to activate community atmosphere'
     ],
-    discoverBscTitle: 'Discover BSC Hot Tokens',
-    discoverBscDesc: 'The name FaceSwap will showcase the popular tokens on the BSC chain, browse popular projects with statistics at a glance, meta search and filtering functions.',
+    discoverBscTitle: 'Discover Solana Hot Tokens',
+    discoverBscDesc: 'The name FaceSwap will showcase the popular tokens on the Solana chain, browse popular projects with statistics at a glance, meta search and filtering functions.',
     discoverBscBullets: [
-      'Display main chain DEX prices, PancakeSwap, Uniswap, etc. working together',
+      'Display main chain DEX prices, Raydium, Orca, etc. working together',
       'Deep and clear business statistics and research',
       'Real-time data and autonomous filtering functions',
       'Find the most suitable project for the community or interact with community partners'
     ],
-    
+
     // Footer
     footerBrand: 'MEMESMARTCHAIN',
     footerBrandDesc: 'Build exclusive MEME community - driven by the community, for the community.',
@@ -55,7 +55,7 @@ const translations = {
     privacyPolicy: 'Privacy Policy',
     cookiePolicy: 'Cookie Policy',
     contactUs: 'Contact Us',
-    
+
     // Community section
     joinRevolution: '🎉 Join the Meme Revolution',
     communitySubtext: 'Connect with thousands of degen traders and meme coin enthusiasts!',
@@ -66,10 +66,10 @@ const translations = {
     twitterDesc: 'Stay updated with trending coins, market news, and spicy memes',
     twitterFollowers: '25.4K followers',
     submitNow: 'Submit Your Meme Coin',
-    
+
     // Features section
     whyTitle: 'Why Meme SmartChain?',
-    whySubtitle: 'The ultimate platform for discovering and tracking BSC meme coins',
+    whySubtitle: 'The ultimate platform for discovering and tracking Solana meme coins',
     feature1Title: 'Real-time Meme Data',
     feature1Desc: 'Get instant updates on price movements, volume spikes, and trending tokens. Never miss a pump!',
     feature2Title: 'Verified Listings',
@@ -80,17 +80,17 @@ const translations = {
     activeUsers: 'Active Users',
     tokensListed: 'Tokens Listed',
     support: 'Support',
-    
+
     // Trending Coins
     trendingTitle: '🔥 Top Trending Coins',
     trendingSubtext: 'The hottest meme coins that degens are aping into right now!',
     viewAllCoins: 'View All Coins',
-    
+
     // 404 Page
     notFoundTitle: '404',
     notFoundSubtitle: 'Oops! Page not found',
     returnHome: 'Return to Home',
-    
+
     // Social links
     twitter: 'Twitter',
     telegram: 'Telegram',
@@ -102,18 +102,18 @@ const translations = {
     community: '社区',
     discover: '发现',
     submitProject: '提交项目 →',
-    
+
     // Hero
     heroTitle1: 'MEME SMARTCHAIN',
     heroTitle2: '构建专属MEME社区',
     heroSubtitle: '向社区展示的MEME社区。以网络空间站的形式，设站鸣，告诉全人类，你的链接 &gt; 社区和MEME项目的专属空间。',
     createProject: '创建项目 →',
     exploreSquare: '探索广场',
-    
+
     // Platform Features
     platformFeaturesTitle: '平台核心功能',
-    platformFeaturesSubtitle: "打造一个简简单等的BSC 主链独创的社区，功能强。赐给社区生态与资本MEME可以沟单地让粉丝 代的。我们的行应功能可以帮助您品牌社区，与代币粉丝互动交流，改代 BSC 代的。",
-    buildBscTitle: '构建BSC代币社区',
+    platformFeaturesSubtitle: "打造一个简简单等的Solana 主链独创的社区，功能强。赐给社区生态与资本MEME可以沟单地让粉丝 代的。我们的行应功能可以帮助您品牌社区，与代币粉丝互动交流，改代 Solana 代的。",
+    buildBscTitle: '构建Solana代币社区',
     buildBscDesc: '在社区、构建代币空间。北京高端社区，让其成为你们现在，让粉丝体验专属代币空间。',
     buildBscBullets: [
       '写给社区专属空间，发帖投票讨论',
@@ -127,15 +127,15 @@ const translations = {
       '多种类型投票，文字、图片、视频、多种选项设置社',
       '长叁投票发行至一键互动，轻松活跃社区气氛'
     ],
-    discoverBscTitle: '发现 BSC 热门代币',
-    discoverBscDesc: '其名 FaceSwap 设盖上展示BSC三世的热门代币，浏览热门项统计一目了了然，元搜索和筛选功能',
+    discoverBscTitle: '发现 Solana 热门代币',
+    discoverBscDesc: '其名 FaceSwap 设盖上展示Solana三世的热门代币，浏览热门项统计一目了了然，元搜索和筛选功能',
     discoverBscBullets: [
-      '展示主链 DEX 价格、PancakeSwap、Uniswap 等一同工与',
+      '展示主链 DEX 价格、Raydium、Orca 等一同工与',
       '深刻明鲜商统计与研究',
       '实时数据与自治筛选功能',
       '找到社区最适合的项目或和社区伙伴进定主'
     ],
-    
+
     // Footer
     footerBrand: 'MEMESMARTCHAIN',
     footerBrandDesc: '构建专属MEME社区 — 由社区驱动，为社区服务。',
@@ -150,7 +150,7 @@ const translations = {
     privacyPolicy: '隐私政策',
     cookiePolicy: 'Cookie 政策',
     contactUs: '联系我们',
-    
+
     // Community section
     joinRevolution: '🎉 加入 Meme 革命',
     communitySubtext: '与数千名交易者和迷因币爱好者连接！',
@@ -161,10 +161,10 @@ const translations = {
     twitterDesc: '关注热门币种、市场新闻和有趣迷因的更新',
     twitterFollowers: '25.4K 名关注者',
     submitNow: '提交您的迷因币',
-    
+
     // Features section
     whyTitle: '为什么选择 Meme SmartChain？',
-    whySubtitle: '发现和追踪 BSC 迷因币的终极平台',
+    whySubtitle: '发现和追踪 Solana 迷因币的终极平台',
     feature1Title: '实时迷因数据',
     feature1Desc: '获取价格波动、交易量激增和热门代币的即时更新。永远不错过拉盘！',
     feature2Title: '已验证列表',
@@ -175,17 +175,17 @@ const translations = {
     activeUsers: '活跃用户',
     tokensListed: '已列出代币',
     support: '支持',
-    
+
     // Trending Coins
     trendingTitle: '🔥 顶级热门币种',
     trendingSubtext: '交易者们正在疯狂买入的最热门迷因币！',
     viewAllCoins: '查看所有币种',
-    
+
     // 404 Page
     notFoundTitle: '404',
     notFoundSubtitle: '抱歉！页面未找到',
     returnHome: '返回首页',
-    
+
     // Social links
     twitter: '推特',
     telegram: '电报',
